@@ -50,6 +50,19 @@ graphics:
 
 {:.font-heading-xl.margin-y-0"}
 
+Weeks
+<ul>
+{% for Week in site.data.timeline.Weeks %}
+<div>
+  <h4>{{ Week.Week }}</h4>
+  {% for item in Week.items %}
+	<p>{{ item.headline }}</p>
+	<p>{{ item.text }}</p>
+  {% endfor %}
+</div>
+{% endfor %}
+</ul>
+
 Everything up to this point [should help people](<javascript:void(0);>) understand your agency or project: who you are, your goal or mission, and how you approach it. Use this section to encourage them to act. Describe why they should get in touch here, and use an active verb on the button below. “Get in touch,” “Learn more,” and so on.
 {:.usa-intro }
 

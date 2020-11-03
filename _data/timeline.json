@@ -1,0 +1,139 @@
+{
+    "Weeks": [
+        {
+            "Week": "July 1 - July 5",
+            "items": [
+                {
+                    "headline": "Join our Slack Community",
+                    "text": "New to Slack? Check out this page to get some tips on getting started."
+                },
+                {
+                    "headline": "Optional User Engagement Workshop in Chicago (7/2)",
+                    "text": "Join an incredible group of TOP participants in an interactive workshop to get a deeper understanding of how the program will unfold, and a preview of the next 12 weeks."
+                }
+            ]
+        },
+        
+        {
+            "Week": "July 8 - July 12",
+            "items": [
+                {
+                    "headline": "Problem Statement Orientation",
+                    "text": "Dive into the weeds about your problem statement, and get more information about the goals of each challenge."
+                },
+                {
+                    "headline": "User Research",
+                    "text": "In parallel to learning about the problem statements, learn more about the communities that are most affected by them and what their experiences, needs and challenges are like"
+                }
+            ]
+        },
+        
+        {
+            "Week": "July 15 - July 19",
+            "items": [
+                {
+                    "headline": "User Research Milestone (7/18)",
+                    "text": "Teams join the virtual milestone to share findings from user research that will inform the design of their product, and connect with user advocates to get feedback"
+                }
+            ]
+        },
+        
+        {
+            "Week": "July 22 - July 26",
+            "items": [
+                {
+                    "headline": "User Research + Data Exploration",
+                    "text": "Teams continue to conduct user research and begin to explore available data sets"
+                }
+            ]
+        },
+        
+        {
+            "Week": "July 29 - August 2",
+            "items": [
+                {
+                    "headline": "Continue Data Exploration",
+                    "text": "Teams continue to explore available data sets"
+                },
+                {
+                    "headline": "Data Dive Milestone (8/1)",
+                    "text": "Teams join the virtual milestone to hear from data stewards and ask questions on available data sets"
+                }
+            ]
+        },
+        
+        {
+            "Week": "August 5 - August 9",
+            "items": [
+                {
+                    "headline": "Data Exploration & Product Development",
+                    "text": "Teams explore available data sets, connect with data stewards, and begin scoping/developing products" 
+                }
+            ]
+        },
+        
+        {
+            "Week": "August 12 - August 16",
+            "items": [
+                {
+                    "headline": "Alpha Demo Milestone (8/15)",
+                    "text": "Participants come together for a virtual demo of the tools in progress. Teams share concepts and wireframes, and get feedback from user advocates, data stewards, and product experts."
+                }
+            ]
+        },
+        
+        {
+            "Week": "August 19 - August 23",
+            "items": [
+                {
+                    "headline": "Product Development & User Testing",
+                    "text": "Teams continue building products and collect user feedback"
+                }
+            ]
+        },
+        
+        
+        {
+            "Week": "August 26 - August 30",
+            "items": [
+                {
+                    "headline": "Beta Demos Milestone (8/29)",
+                    "text": "Teams come together to showcase and share feedback on more mature versions of their products. Typically, tools have reached at least wireframes and have some functioning features."
+                }
+            ]
+        },
+        
+        
+        {
+            "Week": "September 2 - September 6",
+            "items": [
+                {
+                    "headline": "Product Development & User Testing",
+                    "text": "Teams continue building products and conduct user testing <br />- Labor Day - Sept 2nd"
+                }
+            ]
+        },
+        
+        
+        {
+            "Week": "September 16 - September 20",
+            "items": [
+                {
+                    "headline": "Product Development",
+                    "text": "Teams continue building prototypes/products"
+                }
+            ]
+        },
+        
+        
+        {
+            "Week": "September 23 - September 27",
+            "items": [
+                {
+                    "headline": "Present final MVPs",
+                    "text": "Teams share MVP with TOP team prior to collective rollout"
+                }
+            ]
+        }
+    ]
+}
