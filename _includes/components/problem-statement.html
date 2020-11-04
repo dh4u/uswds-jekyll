@@ -1,25 +1,17 @@
-<div class="bg-primary-lighter">
-  <h2>
-    To-do list for Problem Statements
-  </h2>
-  <ol>
-    <li>Put elements in hierarchy - H2, H3, etc</li>
-    <li>Modify styleshet with a .problem-statment class that includes styles for the hierarchichal elements.</li>
-  </ol>
-</div>
-
 <!-- https://designsystem.digital.gov/utilities/layout-grid/ -->
 {% for statement in site.data.dashboard.problem-statements %}
   {% assign current-statement = statement.statement %}
-  <div class="grid-container">
-    <hr class="" />
-    <div class="grid-row">{{ current-statement.heading }}</div>
-    <div class="grid-row">{{ current-statement.subheading }}</div>
-    <div class="grid-row">{{ current-statement.call-out }}</div>
+  <div class="grid-container section-content">
+    <hr style="border-color: {{ current-statement.line-color }};">
+    <div class="grid-row">
+      <h3>{{ current-statement.heading }}</h3>
+      <p class="byline">{{ current-statement.subheading }}</p>
+      <p>{{ current-statement.call-out }}</p>
+    </div>
     <div class="grid-row">
       <div class="grid-column grid-col-4">
         <div>
-          <p>Executive Champion</p>
+          <p class="byline">Executive Champion</p>
           <p>
           {{ current-statement.executive-champion }}
           {% if current-statement.executive-director != "" %}
@@ -28,7 +20,7 @@
           </p>
           <br><br>
           {% if current-statement.product-advisors.size and current-statement.product-advisors.size != 0 %}
-            <p>Product Advisors</p>
+            <p class="byline">Product Advisors</p>
             <ul>
               {% for advisor in current-statement.product-advisors %}
                 <li>{{ advisor }}</li>
@@ -41,7 +33,7 @@
         <div class="grid-column grid-container">
           <div>
             {% if current-statement.tech-teams.size and current-statement.tech-teams.size != 0 %}
-              <p>Tech Teams</p>
+              <p class="byline">Tech Teams</p>
               <ul>
               {% for team in current-statement.tech-teams %}
               <li>{{ team }}</li>
@@ -51,7 +43,7 @@
           </div>
           <div>
             {% if current-statement.user-advocates.size and current-statement.user-advocates.size != 0 %}
-              <p>User Advocates</p>
+              <p class="byline">User Advocates</p>
               <ul>
               {% for advocate in current-statement.user-advocates %}
               <li>{{ advocate }}</li>

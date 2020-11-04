@@ -86,20 +86,28 @@
 
 .section-content hr {
     border: 0;
-    border-top: 2px solid #ccc;
-    width: 200px;
+    border-top: 3px solid #FF3D40;
+    width: 186px;
     margin: 0;
+}
+
+.section-content:nth-of-type(2) hr {
+    border-color: #0059FC;
 }
 
 .section-content h3 {
     margin-top: 15px;
+    font: 'Roboto Mono' 25px/40px;
+    color: #000;
 }
 
 .section-content p.byline {
-    font: 'Roboto Mono' 20px/34.5px;
+    font: 'Roboto Mono' 15px/20px;
+    color: #4f4f4f;
 }
 
 .section-content p {
     width: 500px;
-    
+    font: 'Roboto Mono' 20px/30px;
+    color: #000;
 }
