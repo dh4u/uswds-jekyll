@@ -14,9 +14,7 @@ styles:
         <h2>Workforce Sprint</h2>
         <p>Solve problems for American workers, businesses, investors, and communities by catalyzing cross-sector collaboration</p>
     </div>
+</div>
 
 {% include timeline.html %}
-{% if site.search_site_handle  %} <!-- need to find a proper conditional based on passing data -->
-    {% include components/timeline-week.html %}
-{% endif %}
 {% include problem-statement.html %}
