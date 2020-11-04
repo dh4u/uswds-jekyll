@@ -47,16 +47,21 @@
     box-sizing: border-box;
 } */
 
+.usa-section {
+    padding-top: 1rem;
+}
+
 .hero {
     width: 100%; 
     background-color: #0059FC; 
     height: 458px; 
     left: 0px;
-    top: 175px;
+    top: 0;
     color: #fff; 
     padding: 30px;
     display: flex;
     align-items: center;
+    margin-bottom: 100px;
 }
 
 .hero-content {
