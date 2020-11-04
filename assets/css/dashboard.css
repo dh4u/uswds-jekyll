@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Robot+Mono&display=swap');
+
 /* lifted from https://www.endocreative.com/flexbox-circle-responsive-elements/ */
 .timeline {
     display: flex;
