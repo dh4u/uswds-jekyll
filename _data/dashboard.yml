@@ -1,6 +1,6 @@
 problem-statements:
     - statement: 
-        line-color: red
+        line-color: '#0059FC'
         heading: Catalyzing Investment in Opportunity Zones
         subheading: White House Council of Economic Advisors & U.S. Department of Housing and Urban Development
         call-out: Create digital tools and resources to connect investors with community leaders, entrepreneurs, and workers of America’s 8,764 Opportunity Zones
@@ -23,7 +23,7 @@ problem-statements:
             - SC Opportunity Fund
             - XLerate Health
     - statement: 
-        line-color: blue
+        line-color: '#FF3D40'
         heading: Modernizing Talent Discovery for High Growth Entrepreneurship
         subheading: U.S. Economic Development Administration
         call-out: Create digital tools or open sourced data to transform talent discovery, matching, and retention in mid-size cities across the country, to help them achieve innovation and regional economic growth.
