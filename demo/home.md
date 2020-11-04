@@ -50,22 +50,49 @@ graphics:
 
 {:.font-heading-xl.margin-y-0"}
 
-<!-- Timeline
+Problem Statements
 <ul>
-  {% for week in site.data.home.timeline %}
+  {% for statement in site.data.home.problem_statements %}
     <div>
-        {% for item in week %}
-          <h4>{{ item.dates }}</h4>
-          {% for event in item.events %}
-            {% for item in event %}
-              <h5>{{ item.headline }}</h5>
-              <p>{{ item.text }}</p>
-            {% endfor %}
-          {% endfor %}
+      <h4>{{ statement.statement.heading }}</h4>
+      <p>{{ statement.statement.subheading }}</p>
+      <h3>{{ statement.statement.call_out }}</h3>
+
+      <div>
+        <p>Executive Champion</p>
+        <p>{{ statement.statement.executive_champion }}
+        {{ statement.statement.executive_director }}</p>
+      </div>
+
+      <div>
+        <p>Product Advisors</p>
+        <ul>
+        {% for advisor in statement.statement.product_advisors %}
+        <li>{{ advisor }}</li>
         {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <p>Tech Teams</p>
+        <ul>
+        {% for team in statement.statement.tech_teams %}
+        <li>{{ team }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+
+      <div>
+        <p>User Advocates</p>
+        <ul>
+        {% for advocate in statement.statement.user_advocates %}
+        <li>{{ advocate }}</li>
+        {% endfor %}
+        </ul>
+      </div>
     </div>
   {% endfor %}
-</ul> -->
+</ul>
 
 Timeline
 <ul>
