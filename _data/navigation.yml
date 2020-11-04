@@ -12,6 +12,8 @@
 #   links: primary
 #
 primary:
+  - text: Dashboard
+    href: /dashboard
   - text: Documentation
     href: /docs/
   - text: Navigation section

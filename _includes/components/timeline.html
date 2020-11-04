@@ -1,0 +1,14 @@
+Timeline
+<ul>
+  {% for week in site.data.home.timeline %}
+    {% assign current-week = week.week %}
+    <div>
+        <h4>{{ current-week.week.dates }}</h4>
+        {% for event in current-week.events %}
+        {% assign current-event = event.event %}
+          <h5>{{ current-event.headline }}</h5>
+          <p>{{ current-event.text }}</p>
+        {% endfor %}
+    </div>
+  {% endfor %}
+</ul>
