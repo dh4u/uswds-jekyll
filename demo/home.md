@@ -50,58 +50,73 @@ graphics:
 
 {:.font-heading-xl.margin-y-0"}
 
-Problem Statements
-<ul>
-  {% for statement in site.data.home.problem_statements %}
-    <div>
-      <h4>{{ statement.statement.heading }}</h4>
-      <p>{{ statement.statement.subheading }}</p>
-      <h3>{{ statement.statement.call_out }}</h3>
-
-      <div>
-        <p>Executive Champion</p>
-        <p>{{ statement.statement.executive_champion }}
-        {{ statement.statement.executive_director }}</p>
+<!-- https://designsystem.digital.gov/utilities/layout-grid/ -->
+{% for statement in site.data.home.problem_statements %}
+  {% assign current-statement = statement.statement %}
+  <div class="grid-container">
+    <hr class="" />
+    <div class="grid-row">{{ current-statement.heading }}</div>
+    <div class="grid-row">{{ current-statement.subheading }}</div>
+    <div class="grid-row">{{ current-statement.call_out }}</div>
+    <div class="grid-row">
+      <div class="grid-column grid-col-4">
+        <div>
+          <p>Executive Champion</p>
+          <p>
+          {{ current-statement.executive_champion }}
+          {% if current-statement.executive_director != "" %}
+            <br />{{ current-statement.executive_director }}
+          {% endif %}
+          </p>
+          <br><br>
+          {% if current-statement.product_advisors.size and current-statement.product_advisors.size != 0 %}
+            <p>Product Advisors</p>
+            <ul>
+              {% for advisor in current-statement.product_advisors %}
+                <li>{{ advisor }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
       </div>
-
-      <div>
-        <p>Product Advisors</p>
-        <ul>
-        {% for advisor in statement.statement.product_advisors %}
-        <li>{{ advisor }}</li>
-        {% endfor %}
-        </ul>
-      </div>
-
-      <div>
-        <p>Tech Teams</p>
-        <ul>
-        {% for team in statement.statement.tech_teams %}
-        <li>{{ team }}</li>
-        {% endfor %}
-        </ul>
-      </div>
-
-      <div>
-        <p>User Advocates</p>
-        <ul>
-        {% for advocate in statement.statement.user_advocates %}
-        <li>{{ advocate }}</li>
-        {% endfor %}
-        </ul>
+      <div class="grid-container">  
+        <div class="grid-column grid-container">
+          <div>
+            {% if current-statement.tech_teams.size and current-statement.tech_teams.size != 0 %}
+              <p>Tech Teams</p>
+              <ul>
+              {% for team in current-statement.tech_teams %}
+              <li>{{ team }}</li>
+              {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+          <div>
+            {% if current-statement.user_advocates.size and current-statement.user_advocates.size != 0 %}
+              <p>User Advocates</p>
+              <ul>
+              {% for advocate in current-statement.user_advocates %}
+              <li>{{ advocate }}</li>
+              {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        </div>
       </div>
     </div>
-  {% endfor %}
-</ul>
+  </div>
+{% endfor %}
 
 Timeline
 <ul>
   {% for week in site.data.home.timeline %}
+    {% assign current-week = week.week %}
     <div>
-        <h4>{{ week.week.dates }}</h4>
-        {% for event in week.week.events %}
-          <h5>{{ event.event.headline }}</h5>
-          <p>{{ event.event.text }}</p>
+        <h4>{{ current-week.week.dates }}</h4>
+        {% for event in current-week.events %}
+        {% assign current-event = event.event %}
+          <h5>{{ current-event.headline }}</h5>
+          <p>{{ current-event.text }}</p>
         {% endfor %}
     </div>
   {% endfor %}
