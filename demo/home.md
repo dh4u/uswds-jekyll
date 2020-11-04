@@ -70,12 +70,11 @@ graphics:
 Timeline
 <ul>
   {% for week in site.data.home.timeline %}
-  {{ week }}
     <div>
-        <h4>{{ week.dates }}</h4>
-        {% for event in week.events %}
-          <h5>{{ event.headline }}</h5>
-          <p>{{ event.text }}</p>
+        <h4>{{ week.week.dates }}</h4>
+        {% for event in week.week.events %}
+          <h5>{{ event.event.headline }}</h5>
+          <p>{{ event.event.text }}</p>
         {% endfor %}
     </div>
   {% endfor %}
