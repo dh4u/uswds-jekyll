@@ -57,22 +57,22 @@ graphics:
     <hr class="" />
     <div class="grid-row">{{ current-statement.heading }}</div>
     <div class="grid-row">{{ current-statement.subheading }}</div>
-    <div class="grid-row">{{ current-statement.call_out }}</div>
+    <div class="grid-row">{{ current-statement.call-out }}</div>
     <div class="grid-row">
       <div class="grid-column grid-col-4">
         <div>
           <p>Executive Champion</p>
           <p>
-          {{ current-statement.executive_champion }}
-          {% if current-statement.executive_director != "" %}
-            <br />{{ current-statement.executive_director }}
+          {{ current-statement.executive-champion }}
+          {% if current-statement.executive-director != "" %}
+            <br />{{ current-statement.executive-director }}
           {% endif %}
           </p>
           <br><br>
-          {% if current-statement.product_advisors.size and current-statement.product_advisors.size != 0 %}
+          {% if current-statement.product-advisors.size and current-statement.product-advisors.size != 0 %}
             <p>Product Advisors</p>
             <ul>
-              {% for advisor in current-statement.product_advisors %}
+              {% for advisor in current-statement.product-advisors %}
                 <li>{{ advisor }}</li>
               {% endfor %}
             </ul>
@@ -82,20 +82,20 @@ graphics:
       <div class="grid-container">  
         <div class="grid-column grid-container">
           <div>
-            {% if current-statement.tech_teams.size and current-statement.tech_teams.size != 0 %}
+            {% if current-statement.tech-teams.size and current-statement.tech-teams.size != 0 %}
               <p>Tech Teams</p>
               <ul>
-              {% for team in current-statement.tech_teams %}
+              {% for team in current-statement.tech-teams %}
               <li>{{ team }}</li>
               {% endfor %}
               </ul>
             {% endif %}
           </div>
           <div>
-            {% if current-statement.user_advocates.size and current-statement.user_advocates.size != 0 %}
+            {% if current-statement.user-advocates.size and current-statement.user-advocates.size != 0 %}
               <p>User Advocates</p>
               <ul>
-              {% for advocate in current-statement.user_advocates %}
+              {% for advocate in current-statement.user-advocates %}
               <li>{{ advocate }}</li>
               {% endfor %}
               </ul>

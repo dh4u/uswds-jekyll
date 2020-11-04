@@ -3,20 +3,20 @@ problem_statements:
         line-color: red
         heading: Catalyzing Investment in Opportunity Zones
         subheading: White House Council of Economic Advisors & U.S. Department of Housing and Urban Development
-        call_out: Create digital tools and resources to connect investors with community leaders, entrepreneurs, and workers of America’s 8,764 Opportunity Zones
-        executive_champion: Secretary Ben Carson
-        executive_director: Scott Turner
-        product_advisors:
+        call-out: Create digital tools and resources to connect investors with community leaders, entrepreneurs, and workers of America’s 8,764 Opportunity Zones
+        executive-champion: Secretary Ben Carson
+        executive-director: Scott Turner
+        product-advisors:
             - Alex Ocampo
             - Bryan Lane
             - Tom Juarez
-        tech_teams:
+        tech-teams:
             - Proximate
             - Solve.Is
             - MIT CSAIL
             - Public Democracy
             - Citi Ventures
-        user_advocates:
+        user-advocates:
             - Globe Three Ventures
             - Startup Champions Network
             - Local Grown Salads
@@ -26,17 +26,17 @@ problem_statements:
         line-color: blue
         heading: Modernizing Talent Discovery for High Growth Entrepreneurship
         subheading: U.S. Economic Development Administration
-        call_out: Create digital tools or open sourced data to transform talent discovery, matching, and retention in mid-size cities across the country, to help them achieve innovation and regional economic growth.
-        executive_champion: Dennis Alvord <br>EDA Deputy Assistant<br>Secretary for Regional Affairs
-        executive_director: 
-        product_advisors:
+        call-out: Create digital tools or open sourced data to transform talent discovery, matching, and retention in mid-size cities across the country, to help them achieve innovation and regional economic growth.
+        executive-champion: Dennis Alvord <br>EDA Deputy Assistant<br>Secretary for Regional Affairs
+        executive-director: 
+        product-advisors:
             - Emily Miller
             - Craig Buerstatte
-        tech_teams:
+        tech-teams:
             - Emsi
             - Burning Glass Technologies
             - Redfin
-        user_advocates:
+        user-advocates:
             - FlexJobs
             - Greater MSP
             - Harvard Business School
