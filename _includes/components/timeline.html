@@ -1,33 +1,29 @@
-<div class="bg-primary-lighter">
-  <h2>To-do list for the timeline:</h2>
-  <ol>
-    <li>Give bullets onHover</li>
-    <li>Display content onHover or onClick - Display week 1 by default</li>
-  </ol>
-</div>
-
-horizontal list in container
 <!-- circles in flexbox - https://www.endocreative.com/flexbox-circle-responsive-elements/ -->
 <div class="grid-row timeline">
-{% for week in site.data.dashboard.timeline %}
-  {% assign current-week = week.week %}
-  <div class="tablet:grid-col timeline-item">
-    <div class="timeline-item-circle"></div>
-  </div>
-{% endfor %}
-</div>
-
-
-<ul>
   {% for week in site.data.dashboard.timeline %}
     {% assign current-week = week.week %}
-    <div>
-        <h4>{{ current-week.dates }}</h4>
-        {% for event in current-week.events %}
-        {% assign current-event = event.event %}
-          <h5>{{ current-event.headline }}</h5>
-          <p>{{ current-event.text }}</p>
-        {% endfor %}
+    <div class="tablet:grid-col timeline-item">
+      <div class="timeline-item-circle" onmouseover="hideTimelineDetail(); showTimelineDetail('timeline-week{{week.number}}')"></div>
     </div>
   {% endfor %}
-</ul>
+</div>
+
+<!-- I hate this instead of passing data to a component but I guess that is static site generators? -->
+
+<div class="grid-container">
+  {% for week in site.data.dashboard.timeline %}
+    {% assign current-week = week.week %}
+    <!-- {% assign id = 'timeline-week' | append: current-week.number  %} -->
+    {% assign id = current-week.number  %}
+    <div class="timeline-week" id="{{ id }}" style="display: none;">
+      <h3>Week {{ current-week.number }}</h3>
+      <p>{{ current-week.dates }}</p>
+
+      {% for event in current-week.events %}
+      {% assign current-event = event.event %}
+        <h5>{{ current-event.headline }}</h5>
+        <p>{{ current-event.text }}</p>
+      {% endfor %}
+    </div>
+  {% endfor %}
+</div>
