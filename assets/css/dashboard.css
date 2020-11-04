@@ -79,3 +79,27 @@
     font: 'Roboto Mono' 20px/34.5px;
 
 }
+
+.section-content {
+    margin: 100px 0;
+}
+
+.section-content hr {
+    border: 0;
+    border-top: 2px solid #ccc;
+    width: 200px;
+    margin: 0;
+}
+
+.section-content h3 {
+    margin-top: 15px;
+}
+
+.section-content p.byline {
+    font: 'Roboto Mono' 20px/34.5px;
+}
+
+.section-content p {
+    width: 500px;
+    
+}
