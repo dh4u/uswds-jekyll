@@ -1,3 +1,44 @@
-.timeline-item {
-    display: inline;
+/* lifted from https://www.endocreative.com/flexbox-circle-responsive-elements/ */
+.timeline {
+    display: flex;
+	flex-wrap: wrap;
+	flex-grow: 1;
+	flex-shrink: 1;
+	justify-content: center;
 }
+
+.timeline-item {
+    position: relative;
+	margin: .5em;
+	width: 100%;
+	max-width: 20px;
+	text-align: center;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+/* .timeline-item:before {
+    display: block;
+	content: '';
+	margin-top: 100%;
+} */
+
+.timeline-item-circle {
+    width: 20px;
+    height: 20px;
+
+    background: #FFFFFF;
+    border: 5px solid #FFC402;
+	border-radius: 50%;
+    box-sizing: border-box;
+}
+
+/* .timeline-item:hover {
+    width: 39px;
+    height: 39px;
+    
+    background: #FFFFFF;
+    border: 3px solid #FFC402;
+    border-radius: 50%; /* Ellipse */
+    box-sizing: border-box;
+} */

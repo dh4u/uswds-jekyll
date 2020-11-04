@@ -1,21 +1,20 @@
 <div class="bg-primary-lighter">
   <h2>To-do list for the timeline:</h2>
   <ol>
-    <li>Figure out a horizontal list</li>
-    <li>Style bullets as ellipse</li>
     <li>Give bullets onHover</li>
     <li>Display content onHover or onClick - Display week 1 by default</li>
   </ol>
 </div>
 
 horizontal list in container
-<div class="grid-container timeline">
-  <ul>
-    {% for week in site.data.dashboard.timeline %}
-      {% assign current-week = week.week %}
-      <li class="timeline-item">x</li>
-    {% endfor %}
-  </ul>
+<!-- circles in flexbox - https://www.endocreative.com/flexbox-circle-responsive-elements/ -->
+<div class="grid-row timeline">
+{% for week in site.data.dashboard.timeline %}
+  {% assign current-week = week.week %}
+  <div class="tablet:grid-col timeline-item">
+    <div class="timeline-item-circle"></div>
+  </div>
+{% endfor %}
 </div>
 
 
