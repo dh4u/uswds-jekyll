@@ -7,13 +7,12 @@ styles:
  - /assets/css/dashboard.css
  - href: /assets/css/dashboard.css
 
-hero:
-  hero-bg: 'base'
-  callout:
-    alt: July - Sept 2019
-    text: WORKFORCE SPRINT
-  content: Solve problems for American workers, businesses, investors, and communities by catalyzing cross-sector collaboration
 ---
+<div class="hero">
+    <p class="date">July - Sept 2019</p>
+    <h2 style="font: Oswald 50px/26px; text-transform: uppercase;">Workforce Sprint</h2>
+    <p>Solve problems for American workers, businesses, investors, and communities by catalyzing cross-sector collaboration</p>
+</div>
 
 <div class="bg-primary-lighter">
     <h2>To-do for Hero</h2>
@@ -25,4 +24,7 @@ hero:
 </div>
 
 {% include timeline.html %}
+{% if site.search_site_handle  %} <!-- need to find a proper conditional based on passing data -->
+    {% include components/timeline-week.html %}
+{% endif %}
 {% include problem-statement.html %}

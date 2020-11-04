@@ -42,3 +42,33 @@
     border-radius: 50%; 
     box-sizing: border-box;
 } */
+
+.hero {
+    width: 100%; 
+    background-color: #0059FC; 
+    height: 458px; 
+    left: 0px;
+    top: 175px;
+    color: #fff; 
+    padding: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hero h1 {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 26px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.hero p {
+    
+}
+
+.hero p.date {
+    font: 'Roboto Mono' 20px/34.5px;
+
+}
