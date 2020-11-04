@@ -8,11 +8,22 @@
   </ol>
 </div>
 
+horizontal list in container
+<div class="grid-container timeline">
+  <ul>
+    {% for week in site.data.dashboard.timeline %}
+      {% assign current-week = week.week %}
+      <li class="timeline-item">x</li>
+    {% endfor %}
+  </ul>
+</div>
+
+
 <ul>
   {% for week in site.data.dashboard.timeline %}
     {% assign current-week = week.week %}
     <div>
-        <h4>{{ current-week.week.dates }}</h4>
+        <h4>{{ current-week.dates }}</h4>
         {% for event in current-week.events %}
         {% assign current-event = event.event %}
           <h5>{{ current-event.headline }}</h5>

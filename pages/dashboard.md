@@ -3,8 +3,12 @@ title: Collaboration Dashboard - Scott Harvey
 layout: dashboard
 permalink: /dashboard
 
+styles:
+ - /assets/css/dashboard.css
+ - href: /assets/css/dashboard.css
+
 hero:
-  image: /assets/uswds/img/hero.png
+  hero-bg: 'base'
   callout:
     alt: July - Sept 2019
     text: WORKFORCE SPRINT
