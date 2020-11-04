@@ -3,6 +3,10 @@ title: Collaboration Dashboard - Scott Harvey
 layout: dashboard
 permalink: /dashboard
 
+scripts:
+ - /assets/js/dashboard.js
+ - href: /assets/js/dashboard.js
+
 styles:
  - /assets/css/dashboard.css
  - href: /assets/css/dashboard.css
