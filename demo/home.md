@@ -50,6 +50,21 @@ graphics:
 
 {:.font-heading-xl.margin-y-0"}
 
+Timeline
+<ul>
+  {% for week in site.data.home.timeline %}
+    {% assign current-week = week.week %}
+    <div>
+        <h4>{{ current-week.week.dates }}</h4>
+        {% for event in current-week.events %}
+        {% assign current-event = event.event %}
+          <h5>{{ current-event.headline }}</h5>
+          <p>{{ current-event.text }}</p>
+        {% endfor %}
+    </div>
+  {% endfor %}
+</ul>
+
 <!-- https://designsystem.digital.gov/utilities/layout-grid/ -->
 {% for statement in site.data.home.problem_statements %}
   {% assign current-statement = statement.statement %}
@@ -106,21 +121,6 @@ graphics:
     </div>
   </div>
 {% endfor %}
-
-Timeline
-<ul>
-  {% for week in site.data.home.timeline %}
-    {% assign current-week = week.week %}
-    <div>
-        <h4>{{ current-week.week.dates }}</h4>
-        {% for event in current-week.events %}
-        {% assign current-event = event.event %}
-          <h5>{{ current-event.headline }}</h5>
-          <p>{{ current-event.text }}</p>
-        {% endfor %}
-    </div>
-  {% endfor %}
-</ul>
 
 Everything up to this point [should help people](<javascript:void(0);>) understand your agency or project: who you are, your goal or mission, and how you approach it. Use this section to encourage them to act. Describe why they should get in touch here, and use an active verb on the button below. “Get in touch,” “Learn more,” and so on.
 {:.usa-intro }
