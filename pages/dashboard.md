@@ -5,4 +5,4 @@ permalink: /dashboard
 ---
 
 {% include timeline.html %}
-{% include feature.html %}
+{% include problem-statement.html %}
