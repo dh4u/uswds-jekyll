@@ -51,17 +51,21 @@
     top: 175px;
     color: #fff; 
     padding: 30px;
-    display: inline-block;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
 }
 
-.hero h1 {
+.hero-content {
+    width: 536px;
+}
+
+.hero h2 {
     font-family: 'Oswald';
     font-weight: 500;
     font-size: 50px;
     line-height: 26px;
     text-transform: uppercase;
-    display: block;
+    margin: 10px 0 20px 0;
 }
 
 .hero p {
