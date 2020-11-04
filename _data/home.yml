@@ -1,0 +1,136 @@
+problem_statements:
+    - problem_statement:
+        - heading: Catalyzing Investment in Opportunity Zones
+        - subheading: White House Council of Economic Advisors & U.S. Department of Housing and Urban Development
+        - call_out: Create digital tools and resources to connect investors with community leaders, entrepreneurs, and workers of America’s 8,764 Opportunity Zones
+        - executive_champion: Secretary Ben Carson
+        - executive_director: Scott Turner
+        - product_advisors:
+            - Alex Ocampo
+            - Bryan Lane
+            - Tom Juarez
+        - tech_teams:
+            - Proximate
+            - Solve.Is
+            - MIT CSAIL
+            - Public Democracy
+            - Citi Ventures
+        - user_advocates:
+            - Globe Three Ventures
+            - Startup Champions Network
+            - Local Grown Salads
+            - SC Opportunity Fund
+            - XLerate Health
+    - problem_statement:
+        - heading: Modernizing Talent Discovery for High Growth Entrepreneurship
+        - subheading: U.S. Economic Development Administration
+        - call_out: Create digital tools or open sourced data to transform talent discovery, matching, and retention in mid-size cities across the country, to help them achieve innovation and regional economic growth.
+        - executive_champion: Dennis Alvord <br>EDA Deputy Assistant<br>Secretary for Regional Affairs
+        - executive_director: 
+        - product_advisors:
+            - Emily Miller
+            - Craig Buerstatte
+        - tech_teams:
+            - Emsi
+            - Burning Glass Technologies
+            - Redfin
+        - user_advocates:
+            - FlexJobs
+            - Greater MSP
+            - Harvard Business School
+            - National League of Cities
+            - Startup Champions Network
+timeline:
+    - week: 
+        number: 0
+        dates: July 1 - July 5
+        events:
+            - event: 
+                headline: Join our Slack Community
+                text: New to Slack? Check out this page to get some tips on getting started.
+            - event: 
+                headline: Optional User Engagement Workshop in Chicago (7/2)
+                text: Join an incredible group of TOP participants in an interactive workshop to get a deeper understanding of how the program will unfold, and a preview of the next 12 weeks.
+    - week:
+        number: 1
+        dates: July 8 - July 12
+        events:
+            - event:
+                headline: Problem Statement Orientation
+                text: Dive into the weeds about your problem statement, and get more information about the goals of each challenge.
+            - event: 
+                headline: User Research
+                text: In parallel to learning about the problem statements, learn more about the communities that are most affected by them and what their experiences, needs and challenges are like
+    - week:
+        number: 2
+        dates:  July 15 - July 19
+        events:
+            - event:
+                headline: User Research Milestone (7/18)
+                text: Teams join the virtual milestone to share findings from user research that will inform the design of their product, and connect with user advocates to get feedback
+    - week:
+        number: 3
+        dates:  July 22 - July 26
+        events:
+            - event:
+                headline: User Research + Data Exploration
+                text: Teams continue to conduct user research and begin to explore available data sets
+    - week:
+        number: 4
+        dates:  July 29 - August 2
+        events:
+            - event:
+                headline: Continue Data Exploration
+                text: Teams continue to explore available data sets
+            - event:
+                headline: Data Dive Milestone (8/1)
+                text: Teams join the virtual milestone to hear from data stewards and ask questions on available data sets
+    - week: 
+        number: 5
+        dates: August 5 - August 9
+        events:
+            - event:
+                headline: Data Exploration & Product Development
+                text: Teams explore available data sets, connect with data stewards, and begin scoping/developing products
+    - week: 
+        number: 6
+        dates: August 12 - August 16
+        events:
+            - event:
+                headline: Alpha Demo Milestone (8/15)
+                text: Participants come together for a virtual demo of the tools in progress. Teams share concepts and wireframes, and get feedback from user advocates, data stewards, and product experts.
+    - week: 
+        number: 7
+        dates: August 19 - August 23
+        events:
+            - event:
+                headline: Product Development & User Testing
+                text: Teams continue building products and collect user feedback
+    - week: 
+        number: 8
+        dates: August 26 - August 30
+        events:
+            - event:
+                headline: Beta Demos Milestone (8/29)
+                text: Teams come together to showcase and share feedback on more mature versions of their products. Typically, tools have reached at least wireframes and have some functioning features.
+    - week: 
+        number: 9
+        dates: September 2 - September 6
+        events:
+            - event:
+                headline: Product Development & User Testing
+                text: Teams continue building products and conduct user testing <br />Labor Day - Sept 2nd
+    - week: 
+        number: 10
+        dates: September 16 - September 20
+        events:
+            - event:       
+                headline: Product Development   
+                text: Teams continue building prototypes/products
+    - week: 
+        number: 11
+        dates: September 23 - September 27
+        events:
+            - event:
+                headline: Present final MVPs
+                text: Teams share MVP with TOP team prior to collective rollout

@@ -50,17 +50,34 @@ graphics:
 
 {:.font-heading-xl.margin-y-0"}
 
-Weeks
+<!-- Timeline
 <ul>
-{% for Week in site.data.timeline.Weeks %}
-<div>
-  <h4>{{ Week.Week }}</h4>
-  {% for item in Week.items %}
-	<p>{{ item.headline }}</p>
-	<p>{{ item.text }}</p>
+  {% for week in site.data.home.timeline %}
+    <div>
+        {% for item in week %}
+          <h4>{{ item.dates }}</h4>
+          {% for event in item.events %}
+            {% for item in event %}
+              <h5>{{ item.headline }}</h5>
+              <p>{{ item.text }}</p>
+            {% endfor %}
+          {% endfor %}
+        {% endfor %}
+    </div>
   {% endfor %}
-</div>
-{% endfor %}
+</ul> -->
+
+Timeline
+<ul>
+  {% for week in site.data.home.timeline %}
+    <div>
+        <h4>{{ week.week.dates }}</h4>
+        {% for event in week.week.events %}
+          <h5>{{ event.event.headline }}</h5>
+          <p>{{ event.event.text }}</p>
+        {% endfor %}
+    </div>
+  {% endfor %}
 </ul>
 
 Everything up to this point [should help people](<javascript:void(0);>) understand your agency or project: who you are, your goal or mission, and how you approach it. Use this section to encourage them to act. Describe why they should get in touch here, and use an active verb on the button below. “Get in touch,” “Learn more,” and so on.
