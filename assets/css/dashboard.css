@@ -47,6 +47,55 @@
     box-sizing: border-box;
 } */
 
+.timeline-week {
+    position: absolute;
+    display: none;
+}
+
+.timeline-weeks {
+    height: 400px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.timeline-week .dates {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34.5px;
+}
+
+.timeline-week .headline:before {
+    height: 1px;
+    border: 0.5px solid #4F4F4F;
+    transform: rotate(0.11deg);
+    width: 100%;
+    margin: 0;
+
+    padding-bottom: 39px;
+}
+
+.timeline-week h3 .headline {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34.5px;
+}
+
+.timeline-week .dates {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34.5px;
+}
+
+.timeline-week p .detail {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34.5px;
+}
+
 .usa-section {
     padding-top: 1rem;
 }

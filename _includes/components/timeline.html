@@ -3,26 +3,26 @@
   {% for week in site.data.dashboard.timeline %}
     {% assign current-week = week.week %}
     <div class="tablet:grid-col timeline-item">
-      <div class="timeline-item-circle" onmouseover="hideTimelineDetail(); showTimelineDetail('timeline-week{{week.number}}')"></div>
+      <div class="timeline-item-circle" onmouseover="hideTimelineDetail(); showTimelineDetail('timeline-week{{current-week.number}}')"></div>
     </div>
   {% endfor %}
-</div>
+  </div>
 
 <!-- I hate this instead of passing data to a component but I guess that is static site generators? -->
 
-<div class="grid-container">
+<div class="grid-container timeline-weeks">
   {% for week in site.data.dashboard.timeline %}
     {% assign current-week = week.week %}
-    <!-- {% assign id = 'timeline-week' | append: current-week.number  %} -->
-    {% assign id = current-week.number  %}
-    <div class="timeline-week" id="{{ id }}" style="display: none;">
-      <h3>Week {{ current-week.number }}</h3>
-      <p>{{ current-week.dates }}</p>
+    {% assign id = 'timeline-week' | append: current-week.number  %}
+    <!-- {% assign id = current-week.number  %} -->
+    <div class="timeline-week" id="timeline-week{{ id }}">
+      <h3 class="week">Week {{ current-week.number }}</h3>
+      <p class="dates">{{ current-week.dates }}</p>
 
       {% for event in current-week.events %}
       {% assign current-event = event.event %}
-        <h5>{{ current-event.headline }}</h5>
-        <p>{{ current-event.text }}</p>
+        <h3 class="headline">{{ current-event.headline }}</h3>
+        <p class="detail">{{ current-event.text }}</p>
       {% endfor %}
     </div>
   {% endfor %}
