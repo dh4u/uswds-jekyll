@@ -5,7 +5,7 @@ permalink: /dashboard
 
 scripts:
  - /assets/js/dashboard.js
- - href: /assets/js/dashboard.js
+ - src: /assets/js/dashboard.js
 
 styles:
  - /assets/css/dashboard.css
