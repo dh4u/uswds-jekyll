@@ -12,3 +12,5 @@ function hideTimelineDetail(){
 function showTimelineDetail(id){
     document.getElementById(id).style.display =  "block";
 }
+
+showTimelineDetail('timeline-week0');
